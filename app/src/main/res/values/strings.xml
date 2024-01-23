@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">IslamiApp</string>
+    <string name="hadeth">الأحاديث</string>
+    <string name="sebha">التسبيح</string>
+    <string name="radio">الراديو</string>
+    <string name="quran">القراّن</string>
+    <string name="signature">Supervised by Mohamed Nabil</string>
+    <string name="toolbar_title">إسلامي</string>
+    <string name="tasbeeh">عدد التسبيحات</string>
+    <string name="zero">0</string>
+    <string name="tasbeeh_phrase">سبحان الله</string>
+
+</resources>

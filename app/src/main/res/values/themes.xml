@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.IslamiApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryVariantColor</item>
+        <item name="android:statusBarColor">@color/primaryVariantColor</item>
+        <item name="fontFamily">@font/elmessiri_font</item>
+    </style>
+
+    <style name="Theme.IslamiApp" parent="Base.Theme.IslamiApp" />
+
+    <style name="NumberFontFamily">
+        <item name="fontFamily">@font/inter_font</item>
+    </style>
+
+    <style name="BottomNavigationStyle">
+        <item name="android:background">@color/primaryColor</item>
+        <item name="itemIconTint">@color/ic_bottom_nav_selector</item>
+        <item name="itemTextColor">@color/black</item>
+        <item name="itemIconSize">40dp</item>
+    </style>
+</resources>
