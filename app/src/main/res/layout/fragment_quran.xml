@@ -2,20 +2,77 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:background="@drawable/main_bg"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:background="@drawable/main_bg">
 
     <ImageView
         android:id="@+id/imv_quran"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:src="@drawable/quran_img"
         android:adjustViewBounds="true"
-        app:layout_constraintHeight_percent=".25"
+        android:src="@drawable/quran_img"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <View
+        android:id="@+id/first_x_line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/goldColor"
+        app:layout_constraintTop_toBottomOf="@id/imv_quran" />
+
+    <TextView
+        android:id="@+id/tv_surah_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/elmessiri_semibold"
+        android:text="@string/surah_name"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/y_line"
+        app:layout_constraintTop_toBottomOf="@id/first_x_line" />
+
+    <TextView
+        android:id="@+id/tv_ayat_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/elmessiri_semibold"
+        android:text="@string/ayat_number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@id/y_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_x_line" />
+
+    <View
+        android:id="@+id/second_x_line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/goldColor"
+        app:layout_constraintTop_toBottomOf="@id/tv_surah_name" />
+
+    <View
+        android:id="@+id/y_line"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:background="@color/goldColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/first_x_line" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_chapter_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second_x_line"
+        tools:listitem="@layout/item_chapter_title" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

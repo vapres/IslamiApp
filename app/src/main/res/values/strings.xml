@@ -9,5 +9,9 @@
     <string name="tasbeeh">عدد التسبيحات</string>
     <string name="zero">0</string>
     <string name="tasbeeh_phrase">سبحان الله</string>
+    <string name="quran_radio">إذاعة القرآن الكريم</string>
+    <string name="ahadeth">الأحاديث</string>
+    <string name="ayat_number">عدد الآيات</string>
+    <string name="surah_name">اسم السورة</string>
 
 </resources>
