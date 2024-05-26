@@ -8,7 +8,7 @@ Islami is an Android application designed to provide users with convenient acces
 - **Sebha Fragment**: Includes a digital Sebha with an image and a counter that increments each time the Sebha is clicked.
 - **Radio Fragment**: Provides a Quran radio feature using the [MP3 Quran](https://mp3quran.net) Radio API.
 
-## Technologies Used
+## Technical Details
 
 - **XML Layouts**: Used for designing the user interface.
 - **Adapters**: Utilized for managing the display of lists in the Quran and Hadeeth fragments.
